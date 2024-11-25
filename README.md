@@ -6,3 +6,5 @@ A SQL-based project showcasing schema design, sample data management, and analyt
 - **Query:**
   ```sql
   SELECT * FROM Customers;
+ ![Fetch All Customers Output](assets/fetch_all_customers_output..png)
+
