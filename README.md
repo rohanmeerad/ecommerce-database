@@ -4,7 +4,7 @@ A SQL-based project showcasing schema design, sample data management, and analyt
 - **Purpose:** Retrieve all customer details.
 - **Results:** Displays all rows and columns from the `Customers` table.
 - **Query:**
-- - **Query File:** [fetch_all_customers](queries/fetch_all_customers)
+- - **Query File:** [fetch_all_customers.sql](queries/fetch_all_customers.sql)
 
   ```sql
   SELECT * FROM Customers;
