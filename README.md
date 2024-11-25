@@ -9,4 +9,23 @@ A SQL-based project showcasing schema design, sample data management, and analyt
   ```sql
   SELECT * FROM Customers;
  ![Fetch All Customers Output](assets/fetch_all_customers_output..png)
+### 2. Total Sales Per Product
+- **Purpose:** Calculate total revenue generated for each product.
+- **Results:** Displays each product name along with the total revenue generated.
+- **Query:**
+  ```sql
+  SELECT 
+      P.ProductName, 
+      SUM(OD.Quantity * OD.PricePerUnit) AS TotalSales
+  FROM 
+      OrderDetails OD
+  INNER JOIN 
+      Products P ON OD.ProductID = P.ProductID
+  GROUP BY 
+      P.ProductName
+  ORDER BY 
+      TotalSales DESC;
+  
+  
+
 
