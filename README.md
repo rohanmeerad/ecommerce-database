@@ -57,22 +57,20 @@ ORDER BY
 - **Results:** Displays a list of products with their IDs, names, and total quantities sold, sorted by popularity.
 - **Query File:** [most_popular_products.sql](queries/most_popular_products.sql)
 
-```sql
--- Query 4: Fetch Most Popular Products by Quantity Sold
-SELECT 
-    p.ProductID,
-    p.ProductName,
-    SUM(od.Quantity) AS TotalQuantitySold
-FROM 
-    Products p
-JOIN 
-    OrderDetails od ON p.ProductID = od.ProductID
-GROUP BY 
-    p.ProductID, p.ProductName
-ORDER BY 
-    TotalQuantitySold DESC;
-
-
+  ```sql
+  -- Query 4: Fetch Most Popular Products by Quantity Sold
+  SELECT 
+      p.ProductID,
+      p.ProductName,
+      SUM(od.Quantity) AS TotalQuantitySold
+  FROM 
+      Products p
+  JOIN 
+      OrderDetails od ON p.ProductID = od.ProductID
+  GROUP BY 
+      p.ProductID, p.ProductName
+  ORDER BY 
+      TotalQuantitySold DESC;
 
 
 
