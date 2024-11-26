@@ -51,7 +51,30 @@ GROUP BY
     c.CustomerID, c.Name
 ORDER BY 
     TotalSales DESC;
-![Total Sales Per Customer Output](https://raw.githubusercontent.com/rohanmeerad/ecommerce-database/main/assets/total_sales_per_customer_output.png)
+### Query 4: Most Popular Products by Quantity Sold
+
+- **Purpose:** Identify the most popular products based on total quantity sold.
+- **Results:** Displays a list of products with their IDs, names, and total quantities sold, sorted by popularity.
+- **Query File:** [most_popular_products.sql](queries/most_popular_products.sql)
+
+```sql
+-- Query 4: Fetch Most Popular Products by Quantity Sold
+SELECT 
+    p.ProductID,
+    p.ProductName,
+    SUM(od.Quantity) AS TotalQuantitySold
+FROM 
+    Products p
+JOIN 
+    OrderDetails od ON p.ProductID = od.ProductID
+GROUP BY 
+    p.ProductID, p.ProductName
+ORDER BY 
+    TotalQuantitySold DESC;
+
+
+
+
 
 
 
