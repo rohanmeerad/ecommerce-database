@@ -49,21 +49,3 @@ GROUP BY
     c.CustomerID, c.Name
 ORDER BY 
     TotalSales DESC;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
