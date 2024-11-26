@@ -51,7 +51,10 @@ GROUP BY
     c.CustomerID, c.Name
 ORDER BY 
     TotalSales DESC;
- ![Total Sales Per Customer](assets/total_sales_per_customer.png)
+![Total Sales Per Customer](assets/total_sales_per_customer.png)
+
+
+
 
   
   
