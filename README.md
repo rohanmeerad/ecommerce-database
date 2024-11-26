@@ -27,7 +27,7 @@ A SQL-based project showcasing schema design, sample data management, and analyt
   ORDER BY 
       TotalSales DESC;
  ![Total Sales Per Product Output](assets/total_sales_per_product_output.png)
- ## Query 3: Total Sales Per Customer
+ ### Query 3: Total Sales Per Customer
 
 **Purpose**: Calculate the total sales amount for each customer.
 
@@ -36,8 +36,6 @@ A SQL-based project showcasing schema design, sample data management, and analyt
 **SQL Query**:
 - - **Query File:** [total_sales_per_customer.sql](queries/total_sales_per_customer.sql)
 ```sql
--- Query 3: Fetch Total Sales Per Customer
--- Purpose: Calculate the total sales amount for each customer.
 
 SELECT 
     c.CustomerID,
@@ -51,6 +49,8 @@ GROUP BY
     c.CustomerID, c.Name
 ORDER BY 
     TotalSales DESC;
+
+
 
 
 
