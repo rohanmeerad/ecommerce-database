@@ -13,6 +13,7 @@ A SQL-based project showcasing schema design, sample data management, and analyt
 - **Purpose:** Calculate total revenue generated for each product.
 - **Results:** Displays each product name along with the total revenue generated.
 - **Query:**
+- - **Query File:** [total_sales_per_product.sql](queries/total_sales_per_product.sql)
   ```sql
   SELECT 
       P.ProductName, 
@@ -25,6 +26,7 @@ A SQL-based project showcasing schema design, sample data management, and analyt
       P.ProductName
   ORDER BY 
       TotalSales DESC;
+ ![Fetch All Customers Output](assets/fetch_all_customers_output..png)
   
   
 
