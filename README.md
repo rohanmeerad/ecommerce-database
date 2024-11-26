@@ -26,7 +26,7 @@ A SQL-based project showcasing schema design, sample data management, and analyt
       P.ProductName
   ORDER BY 
       TotalSales DESC;
- ![Fetch All Customers Output](assets/fetch_all_customers_output..png)
+ ![Total Sales Per Product Output](assets/total_sales_per_product_output.png)
   
   
 
