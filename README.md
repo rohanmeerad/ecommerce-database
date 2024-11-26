@@ -51,7 +51,13 @@ GROUP BY
     c.CustomerID, c.Name
 ORDER BY 
     TotalSales DESC;
-![Total Sales Per Customer](assets/total_sales_per_customer.png)
+![Total Sales Per Customer Output](https://raw.githubusercontent.com/rohanmeerad/ecommerce-database/main/assets/total_sales_per_customer_output.png)
+
+
+
+
+
+
 
 
 
